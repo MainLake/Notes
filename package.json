@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "pm2 start ecosystem.config.js --only tasks-api-dev && pm2 logs tasks-api-dev",
-    "start": "pm2 start ecosystem.config.js --only tasks-api-prod",
+    "start": "pm2 start ecosystem.config.js --only tasks-api-prod --env production",
     "stop": "pm2 stop all",
     "delete": "pm2 delete all",
     "list": "pm2 list",
